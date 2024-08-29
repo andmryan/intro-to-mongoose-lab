@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <%- include('./partials/nav') %>
+  <h1>Hello Joy!</h1>
+  <form action="/cust-ejs" method="post" class="form-example">
+    <div class="form-example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="form-example">
+      <label for="age">Enter your age: </label>
+      <input type="number" name="age" id="age" required />
+    </div>
+    <div class="form-example">
+      <input type="submit" value="Submit!" />
+    </div>
+  </form>
+
+</body>
+</html>
